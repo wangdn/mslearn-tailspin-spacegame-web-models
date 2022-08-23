@@ -47,7 +47,7 @@ steps:
   displayName: Universal Publish
   inputs:
     command: publish
-    publishDirectory: '**/*.csproj'
+    publishDirectory: '$(Build.ArtifactStagingDirectory)'
     vstsFeedPublish: '$(System.TeamProject)/Tailspin.SpaceGame.Web.Models'
     vstsFeedPackagePublish: 'testPackage'
     versionOption: minor
